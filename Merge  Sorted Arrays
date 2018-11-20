@@ -1,0 +1,21 @@
+#Converting string input into list
+def Convert(string): 
+    li = list(string.split(" ")) 
+    return li 
+
+#Adding two lists
+#Sorting list
+def Sort(str1, str2):
+    fli = Convert(str1) + Convert(str2)
+    fli.sort()
+    return fli
+
+#Asking for input 
+a = input("Enter up to 5 numbers divided by a space: ")
+b = input("Enter more (up to) 5 numbers divided by a space: ")
+
+#Prints
+print('')
+print('This is your first list:', Convert(a),'\n')
+print('and this is the second:', Convert(b),'\n')
+print('Adding and sorting them, this is the result!:', Sort(a,b))
